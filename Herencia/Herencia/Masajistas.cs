@@ -11,13 +11,17 @@ namespace Herencia
         private string titulacion;
         private int aniosExperiencia;
 
+
+
         public Masajistas()
         {
 
         }
         public Masajistas(int id, string nombre, string apellidos, int edad, int aniosExperiencia, string titulacion) : base(id, nombre, apellidos, edad)
         {
-
+            this.aniosExperiencia = aniosExperiencia;
+            this.titulacion = titulacion;
+            
         }
         public string GetTitulacion()
         {

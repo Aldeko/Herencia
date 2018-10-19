@@ -10,14 +10,18 @@ namespace Herencia
     {
         private int dorsal;
         private string demarcacion;
-        
+
+
+
         public Futbolistas()
         {
-
         }
+
         public Futbolistas(int id, string nombre, string apellidos, int edad, int dorsal, string demarcacion):base(id,nombre,apellidos, edad)
         {
-
+            this.dorsal = dorsal;
+            this.demarcacion = demarcacion;
+            
         }
         public int GetDorsal()
         {

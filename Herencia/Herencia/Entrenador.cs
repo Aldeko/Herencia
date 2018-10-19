@@ -9,14 +9,17 @@ namespace Herencia
     class Entrenador:SeleccionFutbol
     {
         private string idFederacion;
-        
+
+
+
         public Entrenador ()
         {
 
         }
         public Entrenador(int id, string nombre, string apellidos, int edad, string idFederacion) : base(id, nombre, apellidos, edad)
         {
-
+            this.idFederacion = idFederacion;
+           
         }
 
         public string GetIdFederacion()

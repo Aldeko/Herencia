@@ -9,8 +9,9 @@ namespace Herencia
     class SeleccionFutbol
     {
         private int id, edad;
-        private string nombre, apellidos, datos;
-
+        private string nombre, apellidos;
+        private static int cont = 0;
+        
         public SeleccionFutbol()
         {
 
@@ -21,6 +22,7 @@ namespace Herencia
             this.nombre = nombre;
             this.apellidos = apellidos;
             this.edad = edad;
+            cont++;
         }
 
         public int GetId()

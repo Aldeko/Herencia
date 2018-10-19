@@ -18,9 +18,49 @@ namespace Herencia
             Console.WriteLine(f1.ToStringFutbolistas());
             Console.WriteLine(e1.ToStringEntrenador());
             Console.WriteLine(m1.ToStringMasajistas());
-            
-
             Console.ReadLine();
+
+
+            List<SeleccionFutbol> listaMasajistas = new List<SeleccionFutbol>()
+            {
+              m1
+            };
+
+            foreach (SeleccionFutbol masajista in listaMasajistas)
+            {
+                if (masajista.GetType().ToString() == "Masajista")
+                {
+                    Console.WriteLine(masajista); 
+                }
+            }
+
+            List<SeleccionFutbol> listaEntrenador = new List<SeleccionFutbol>()
+            {
+              e1
+            };
+            foreach (SeleccionFutbol entrenador in listaEntrenador)
+            {
+                if (entrenador.GetType().ToString()=="Entrenador")
+                {
+                    Console.WriteLine(entrenador);
+
+                }
+            }
+            List<Futbolistas> listaFutbolistas = new List<Futbolistas>()
+            {
+              f1
+            };
+            foreach (SeleccionFutbol futbolista in listaFutbolistas)
+            {
+                if (futbolista.GetType().ToString() == "Futbolista")
+                {
+                    Console.WriteLine(futbolista);
+                }
+            }
+
+
         }
+
     }
-}
+
+
