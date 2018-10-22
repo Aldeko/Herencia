@@ -30,7 +30,7 @@ namespace Herencia
             {
                 if (masajista.GetType().ToString() == "Masajista")
                 {
-                    Console.WriteLine(masajista); 
+                    Console.WriteLine(masajista);
                 }
             }
 
@@ -40,7 +40,7 @@ namespace Herencia
             };
             foreach (SeleccionFutbol entrenador in listaEntrenador)
             {
-                if (entrenador.GetType().ToString()=="Entrenador")
+                if (entrenador.GetType().ToString() == "Entrenador")
                 {
                     Console.WriteLine(entrenador);
 
@@ -58,9 +58,24 @@ namespace Herencia
                 }
             }
 
+            List<SeleccionFutbol> listaSeleccion = new List<SeleccionFutbol>()
+            {
+                f1, m1, e1
+            };
+            foreach(SeleccionFutbol trabajo in listaSeleccion)
+            {
+                Console.WriteLine(trabajo.GetType().Name.ToUpper());
+                Console.WriteLine(trabajo.MostrarDatos());
+                Console.WriteLine("***************************");
+            }
+            Console.ReadLine();
+
+
+
 
         }
 
     }
+}
 
 

@@ -11,6 +11,7 @@ namespace Herencia
         private int id, edad;
         private string nombre, apellidos;
         private static int cont = 0;
+        private bool viajando, concentrado;
         
         public SeleccionFutbol()
         {
@@ -57,10 +58,18 @@ namespace Herencia
         {
             this.edad = edad;
         }
-        public string ToString()
+        public virtual string MostrarDatos()
         {
-            return "ID: " + id + " Nombre: " + nombre + " Apellidos: " + apellidos + " Edad: " + edad; 
+            return "ID: " + id + "\nNOMBRE: " + nombre + "\nAPELLIDO: " + apellidos + "\nEDAD" + edad;
         }
-       
+        public void Concertrarse ()
+        {
+            this.concentrado = true;
+        }
+        public void Viajar()
+        {
+            this.viajando = true;
+        }
+        
     }
 }
