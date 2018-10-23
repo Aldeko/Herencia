@@ -40,10 +40,14 @@ namespace Herencia
             this.aniosExperiencia = aniosExperiencia;
         }
 
-        public string ToStringMasajistas()
+        public override string MostrarDatos()
         {
-            return base.ToString() + " Titulacion: " + titulacion + " Años de Experiencia: " + aniosExperiencia;
+            return base.MostrarDatos() + " Titulacion: " + titulacion + " Años de Experiencia: " + aniosExperiencia;
         }
 
+        public void DarMasaje()
+        {
+            Console.WriteLine("Dando masaje");
+        }
     }
 }

@@ -65,9 +65,12 @@ namespace Herencia
         public void Concertrarse ()
         {
             this.concentrado = true;
+            Console.WriteLine("Se ha concentrado");
         }
         public void Viajar()
         {
+            
+            Console.WriteLine("Esta Viajando");
             this.viajando = true;
         }
         

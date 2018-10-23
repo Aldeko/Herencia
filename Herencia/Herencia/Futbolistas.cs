@@ -39,9 +39,19 @@ namespace Herencia
         {
             this.demarcacion = demarcacion;
         }
-        public string ToStringFutbolistas()
+        
+        public override string MostrarDatos()
         {
-            return base.ToString() + " Dorsal: " + dorsal + " Demarcacion: " + demarcacion;
+            return base.MostrarDatos() + " Dorsal: " + dorsal + " Demarcacion: " + demarcacion;
+        }
+        public void JugarPartido()
+        {
+            Console.WriteLine("Jugando Partido");
+        }
+        public void Entrenar()
+        {
+            Console.WriteLine("Entrenando");
+
         }
     }
 }
